@@ -8,9 +8,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-/**
- * Created by Administrator on 2017/5/15 0015.
- */
 
 public class LoggerControler {
     public static Logger logger = null;

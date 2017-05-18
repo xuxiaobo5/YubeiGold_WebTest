@@ -1,6 +1,10 @@
 package pages.background;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+import utils.BasicPage;
+
+import static pages.background.FrameUtils.leftFrame;
 
 /**
  * Created by Administrator on 2017/5/16 0016.
@@ -43,8 +47,11 @@ public class Page_FriendLink {
     //定位 搜索按钮
     public static By searchBtn = By.xpath("//*[@id=\"query_form\"]/div/div/div/div/div[2]/div/div/div/div[2]/button");
 
+    //定位 添加友情链接成功文字
+    public static By addSuccessText = By.xpath("//*[text()='保存成功。']");
 
-/*    @Test
+/*
+    @Test
     public void clickFriendlyLink() throws InterruptedException {
         BasicPage.openBrowser("chrome");
         BasicPage.navigate("http://192.168.1.165:8010/trade-mis");
@@ -59,6 +66,7 @@ public class Page_FriendLink {
         Thread.sleep(5000);
         BasicPage.closeBrowser();
 
-    }*/
+    }
+*/
 
 }

@@ -1,24 +1,47 @@
 package testcase;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pages.background.Page_FriendLink;
+import pages.background.Page_Login;
+import utils.BasicPage;
+
+import java.io.IOException;
+
+import static pages.background.FrameUtils.inputFrame;
+import static pages.background.FrameUtils.rightFrame;
+
 
 /**
  * Created by Administrator on 2017/5/16 0016.
  */
 public class TestCase_FriendLink {
-    @Test
-    public void aVoid() throws InterruptedException {
- /*       BasicPage.openBrowser("chrome");
-        BasicPage.navigate("http://192.168.1.165:8010/trade-mis");
-        Page_Login.Login("superadmin","123456");
-        Thread.sleep(5000);
-        BasicPage.switchToFrame(0);
-        BasicPage.click(first_contentManagement);
-        BasicPage.click(friendlyLink);
-        BasicPage.switchToFrame("main_right_frame");
-        BasicPage.click(frindlyLinkAddBtn);
-        Thread.sleep(5000);
-        BasicPage.closeBrowser();*/
 
+    @BeforeMethod
+    public void open(){
+        BasicPage.openBrowser();
+        BasicPage.navigate("http://192.168.1.165:8010/trade-mis");
+    }
+    @Test
+    public void aVoid() throws InterruptedException, IOException {
+        Page_Login.Login();
+        BasicPage.switchToParFrame();
+        BasicPage.click(Page_FriendLink.firstTab_ContentManagement);
+        BasicPage.click(Page_FriendLink.friendLinkTab);
+        BasicPage.switchToFrame(rightFrame);
+        BasicPage.click(Page_FriendLink.addFriLink);
+        BasicPage.switchToDef();
+        BasicPage.switchToFrame(inputFrame);
+        BasicPage.type(Page_FriendLink.newFriLinkName,"testdata");
+        BasicPage.type(Page_FriendLink.newFriLinkLink,"http://www.qq.com");
+        BasicPage.click(Page_FriendLink.newFrilinkConfirm);
+
+
+    }
+
+    @AfterMethod
+    public void close(){
+        BasicPage.closeBrowser();
     }
 }

@@ -1,19 +1,16 @@
 package utils;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.base.Function;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Administrator on 2017/5/15 0015.
- */
 
 public class BasicPage {
 
@@ -23,7 +20,7 @@ public class BasicPage {
 
     public static WebDriver openBrowser(){
         String dir = System.getProperty("user.dir");
-        String path = System.setProperty("webdriver.chrome.driver", dir+"/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", dir + "/drivers/chromedriver.exe");
         driver = new ChromeDriver();
         return driver;
     }
@@ -81,6 +78,16 @@ public class BasicPage {
         return text;
     }
 
+    public static ArrayList getTexts(By by){
+        ArrayList arrayList = new ArrayList();
+        List<WebElement> list = findElements(by);
+        for (int i = 0; i < list.size(); i++) {
+            String text = list.get(i).getText();
+            arrayList.add(text);
+            log.info("get texts is : " + text );
+        }return arrayList;
+    }
+
     protected void scrollToElement(By by) {
         WebElement e = findElement(by);
         log.info("scroll view element");
@@ -95,15 +102,16 @@ public class BasicPage {
         actions.moveToElement(e).perform();
     }
 
-    public static void switchToFrame(String name){
-        driver.switchTo().frame(name);
+    public static void switchToFrame(By by){
+        WebElement f = findElement(by);
+        driver.switchTo().frame(f);
     }
 
     public static void switchToFrame(int index){
         driver.switchTo().frame(index);
     }
 
-    public static void switchToFrame(By by){
+    public static void switchToFrame1(By by){
         WebElement e = driver.findElement(by);
         driver.switchTo().frame(e);
     }
@@ -115,4 +123,5 @@ public class BasicPage {
     public static void switchToDef(){
         driver.switchTo().defaultContent();
     }
+
 }

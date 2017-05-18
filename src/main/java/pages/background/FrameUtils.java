@@ -12,4 +12,6 @@ public class FrameUtils {
 
     //定位第二个frame
     public static By rightFrame = By.xpath("//*[@class='page-content']/div/iframe");
+
+    public static By inputFrame = By.xpath("//*[@class='ui_main']/div/iframe");
 }

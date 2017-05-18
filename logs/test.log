@@ -135,3 +135,50 @@
 2017-05-17 18:25:50,932 INFO main [utils.BasicPage]info(line:42)type values is : 123456
 2017-05-17 18:25:51,744 INFO main [utils.BasicPage]info(line:42)get text is : 系統管理員
 2017-05-17 18:25:52,196 INFO main [utils.BasicPage]info(line:42)get text is : 交易管理系统
+2017-05-18 16:17:06,148 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 16:17:06,247 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 16:17:07,000 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 16:17:12,394 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 16:17:12,493 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 16:17:13,207 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 16:17:13,728 INFO main [utils.BasicPage]info(line:39)get text is : 交易管理系统
+2017-05-18 17:04:46,938 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 17:04:47,040 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 17:04:47,820 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 17:08:45,355 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 17:08:45,465 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 17:08:46,312 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 17:08:57,424 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[@id="save_form"]/div/div[3]/div[1]/div/div/input
+2017-05-18 17:18:58,959 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 17:18:59,104 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 17:19:00,299 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 17:19:28,067 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 17:19:28,160 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 17:19:29,158 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 17:21:11,452 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 17:21:11,546 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 17:21:12,323 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 17:22:05,991 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 17:22:06,087 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 17:22:06,993 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 17:22:08,160 INFO main [utils.BasicPage]info(line:39)type values is : testdata
+2017-05-18 17:22:08,295 INFO main [utils.BasicPage]info(line:39)type values is : http://www.qq.com
+2017-05-18 17:22:18,907 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[text()='保存成功。']
+2017-05-18 17:22:29,785 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[text()='保存成功。']
+2017-05-18 17:22:40,608 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[text()='保存成功。']
+2017-05-18 17:29:25,412 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 17:29:25,514 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 17:29:26,517 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 17:29:27,513 INFO main [utils.BasicPage]info(line:39)type values is : testdata
+2017-05-18 17:29:27,648 INFO main [utils.BasicPage]info(line:39)type values is : http://www.qq.com
+2017-05-18 17:30:31,569 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 17:30:31,672 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 17:30:32,413 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 17:30:43,589 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[@id="save_form"]/div/div[3]/div[1]/div/div/input111
+2017-05-18 17:30:54,484 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[@id="save_form"]/div/div[3]/div[1]/div/div/input111
+2017-05-18 17:31:05,282 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[@id="save_form"]/div/div[3]/div[1]/div/div/input111
+2017-05-18 18:01:55,641 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-18 18:01:55,737 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-18 18:01:56,427 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-18 18:01:57,308 INFO main [utils.BasicPage]info(line:39)type values is : testdata
+2017-05-18 18:01:57,444 INFO main [utils.BasicPage]info(line:39)type values is : http://www.qq.com
