@@ -7,11 +7,12 @@ import org.openqa.selenium.By;
  */
 public class FrameUtils {
 
-    //定位第一个frame
+    //定位左侧的frame
     public static By leftFrame = By.xpath("//*[@id='main_right' and @class ='page-content']/iframe");
 
-    //定位第二个frame
+    //定位右侧的frame
     public static By rightFrame = By.xpath("//*[@class='page-content']/div/iframe");
 
+    //定位输入框的frame
     public static By inputFrame = By.xpath("//*[@class='ui_main']/div/iframe");
 }

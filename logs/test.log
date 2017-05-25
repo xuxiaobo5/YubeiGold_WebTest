@@ -182,3 +182,14 @@
 2017-05-18 18:01:56,427 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
 2017-05-18 18:01:57,308 INFO main [utils.BasicPage]info(line:39)type values is : testdata
 2017-05-18 18:01:57,444 INFO main [utils.BasicPage]info(line:39)type values is : http://www.qq.com
+2017-05-19 13:28:37,360 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-19 13:28:37,473 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-19 13:28:38,329 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-19 13:32:56,519 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-19 13:32:56,638 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-19 13:32:57,450 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-19 13:32:57,467 INFO main [utils.BasicPage]info(line:39)no frame id = :2
+2017-05-19 13:34:05,077 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-05-19 13:34:05,172 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-05-19 13:34:05,912 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-05-19 13:34:16,147 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[@id="1mCSB_1_container"]/ul/li[12]/a/span[2]

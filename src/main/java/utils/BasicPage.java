@@ -18,6 +18,7 @@ public class BasicPage {
 
     public static WebDriver driver;
 
+    //打开浏览器
     public static WebDriver openBrowser(){
         String dir = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", dir + "/drivers/chromedriver.exe");
@@ -25,15 +26,18 @@ public class BasicPage {
         return driver;
     }
 
+    //关闭浏览器
+    public static void closeBrowser(){
+        driver.quit();
+    }
+
+    //跳转链接并最大化浏览器
     public static void navigate(String url){
         driver.manage().window().maximize();
         driver.get(url);
     }
 
-    public static void closeBrowser(){
-        driver.quit();
-    }
-
+    //查找单个元素
     public static WebElement findElement(By by){
         WebElement element = null;
         try{
@@ -47,6 +51,7 @@ public class BasicPage {
         return element;
     }
 
+    //查找多个元素
     public static List<WebElement> findElements(By by){
         List<WebElement> list = null;
         try{
@@ -60,11 +65,13 @@ public class BasicPage {
         return list;
     }
 
+    //点击
     public static void click(By by){
         WebElement e = findElement(by);
         e.click();
     }
 
+    //输入文本
     public static void type(By by, String values){
         WebElement e = findElement(by);
         e.clear();
@@ -72,12 +79,14 @@ public class BasicPage {
         log.info("type values is : " + values);
     }
 
+    //获取单个文本信息
     public static String getText(By by){
         String text = findElement(by).getText();
         log.info("get text is : " + text);
         return text;
     }
 
+    //获取多个文本信息
     public static ArrayList getTexts(By by){
         ArrayList arrayList = new ArrayList();
         List<WebElement> list = findElements(by);
@@ -88,6 +97,7 @@ public class BasicPage {
         }return arrayList;
     }
 
+    //滚动到指定元素并居中展示
     protected void scrollToElement(By by) {
         WebElement e = findElement(by);
         log.info("scroll view element");
@@ -96,30 +106,25 @@ public class BasicPage {
         js.executeScript("arguments[0].scrollIntoViewIfNeeded(true);", e);
     }
 
+    //移动到指定元素
     public static void moveToElement(By by){
         WebElement e = findElement(by);
         Actions actions = new Actions(driver);
         actions.moveToElement(e).perform();
     }
 
+    //切换到frame
     public static void switchToFrame(By by){
         WebElement f = findElement(by);
         driver.switchTo().frame(f);
     }
 
-    public static void switchToFrame(int index){
-        driver.switchTo().frame(index);
-    }
-
-    public static void switchToFrame1(By by){
-        WebElement e = driver.findElement(by);
-        driver.switchTo().frame(e);
-    }
-
+    //返回上一个frame
     public static void switchToParFrame(){
         driver.switchTo().parentFrame();
     }
 
+    //跳出frame
     public static void switchToDef(){
         driver.switchTo().defaultContent();
     }
