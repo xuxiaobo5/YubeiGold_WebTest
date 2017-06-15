@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.background.Page_Login;
 import utils.BasicPage;
+import utils.LoggerControler;
 
 /**
  * Created by Administrator on 2017/5/16 0016.

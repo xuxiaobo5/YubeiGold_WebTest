@@ -26,8 +26,8 @@ public class TestCase_FriendLink {
     @Test
     public void aVoid() throws InterruptedException, IOException {
         Page_Login.Login();
-        BasicPage.switchToFrame(2);
-     /*   BasicPage.switchToParFrame();
+        //BasicPage.switchToFrame(2);
+        BasicPage.switchToParFrame();
         BasicPage.click(Page_FriendLink.firstTab_ContentManagement);
         BasicPage.click(Page_FriendLink.friendLinkTab);
         BasicPage.switchToFrame(rightFrame);
@@ -36,13 +36,13 @@ public class TestCase_FriendLink {
         BasicPage.switchToFrame(inputFrame);
         BasicPage.type(Page_FriendLink.newFriLinkName,"testd  ata");
         BasicPage.type(Page_FriendLink.newFriLinkLink,"http://www.qq.com");
-        BasicPage.click(Page_FriendLink.newFrilinkConfirm);*/
+        BasicPage.click(Page_FriendLink.newFrilinkConfirm);
 
 
     }
 
-    @AfterMethod
+    /*@AfterMethod
     public void close(){
         BasicPage.closeBrowser();
-    }
+    }*/
 }

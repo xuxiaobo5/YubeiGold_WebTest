@@ -193,3 +193,70 @@
 2017-05-19 13:34:05,172 INFO main [utils.BasicPage]info(line:39)type values is : 123456
 2017-05-19 13:34:05,912 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
 2017-05-19 13:34:16,147 INFO main [utils.BasicPage]info(line:39)can't find element : By.xpath: //*[@id="1mCSB_1_container"]/ul/li[12]/a/span[2]
+2017-06-14 15:03:00,858 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-06-14 15:03:00,988 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-06-14 15:03:01,953 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-06-14 15:03:06,267 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-06-14 15:03:06,369 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-06-14 15:03:07,728 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-06-14 15:03:08,196 INFO main [utils.BasicPage]info(line:39)get text is : 交易管理系统
+2017-06-14 15:06:48,619 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-06-14 15:06:48,733 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-06-14 15:06:49,514 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-06-14 15:06:50,518 INFO main [utils.BasicPage]info(line:39)type values is : testd  ata
+2017-06-14 15:06:50,694 INFO main [utils.BasicPage]info(line:39)type values is : http://www.qq.com
+2017-06-14 15:07:20,079 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-06-14 15:07:20,177 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-06-14 15:07:20,938 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-06-14 15:07:21,873 INFO main [utils.BasicPage]info(line:39)type values is : testd  ata
+2017-06-14 15:07:22,015 INFO main [utils.BasicPage]info(line:39)type values is : http://www.qq.com
+2017-06-14 15:07:43,530 INFO main [utils.BasicPage]info(line:39)type values is : superadmin
+2017-06-14 15:07:43,631 INFO main [utils.BasicPage]info(line:39)type values is : 123456
+2017-06-14 15:07:44,620 INFO main [utils.BasicPage]info(line:39)get text is : 系統管理員
+2017-06-14 15:07:45,701 INFO main [utils.BasicPage]info(line:39)type values is : testd  ata
+2017-06-14 15:07:45,864 INFO main [utils.BasicPage]info(line:39)type values is : http://www.qq.com
+2017-06-15 10:20:46,666 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 10:22:20,491 INFO main [utils.RandomNum123]info(line:39)0.7381941242060864
+2017-06-15 10:35:38,952 INFO main [utils.RandomNum123]info(line:39)78231.3933798451
+2017-06-15 10:37:12,813 INFO main [utils.RandomNum123]info(line:39)15267
+2017-06-15 10:38:21,820 INFO main [utils.RandomNum123]info(line:39)50484
+2017-06-15 14:30:45,041 INFO main [utils.RandomNum123]info(line:39)9090
+2017-06-15 14:32:36,421 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:32:48,290 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:32:51,466 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:33:12,858 INFO main [utils.RandomNum123]info(line:39)0.7679792554388936
+2017-06-15 14:33:48,939 INFO main [utils.RandomNum123]info(line:39)17.104518091512922
+2017-06-15 14:34:14,959 INFO main [utils.RandomNum123]info(line:39)76
+2017-06-15 14:34:30,176 INFO main [utils.RandomNum123]info(line:39)8202286765493
+2017-06-15 14:36:56,288 INFO main [utils.RandomNum123]info(line:39)83967
+2017-06-15 14:37:40,386 INFO main [utils.RandomNum123]info(line:39)18419
+2017-06-15 14:37:45,638 INFO main [utils.RandomNum123]info(line:39)83511
+2017-06-15 14:37:49,800 INFO main [utils.RandomNum123]info(line:39)13211
+2017-06-15 14:42:31,399 INFO main [utils.RandomNum123]info(line:39)83671
+2017-06-15 14:44:52,753 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:46:53,938 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:47:00,128 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:47:02,991 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:48:08,907 INFO main [utils.RandomNum123]info(line:39)5
+2017-06-15 14:48:21,448 INFO main [utils.RandomNum123]info(line:39)1
+2017-06-15 14:48:24,045 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:48:26,726 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:48:29,270 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 14:48:33,093 INFO main [utils.RandomNum123]info(line:39)1
+2017-06-15 14:48:35,854 INFO main [utils.RandomNum123]info(line:39)0
+2017-06-15 15:15:17,438 INFO main [utils.RandomNum123]info(line:39)7
+2017-06-15 15:15:25,908 INFO main [utils.RandomNum123]info(line:39)8
+2017-06-15 15:16:42,683 INFO main [utils.RandomNum123]info(line:39)5
+2017-06-15 15:16:45,224 INFO main [utils.RandomNum123]info(line:39)3
+2017-06-15 15:16:47,650 INFO main [utils.RandomNum123]info(line:39)3
+2017-06-15 15:16:50,316 INFO main [utils.RandomNum123]info(line:39)5
+2017-06-15 15:16:52,862 INFO main [utils.RandomNum123]info(line:39)4
+2017-06-15 15:16:56,051 INFO main [utils.RandomNum123]info(line:39)4
+2017-06-15 16:22:47,996 INFO main [utils.RandomNum123]info(line:39)acFhd
+2017-06-15 16:56:58,097 INFO main [utils.RandomNum]info(line:39)㒟ｚ񭁳
+2017-06-15 16:57:50,751 INFO main [utils.RandomNum]info(line:39)81
+2017-06-15 17:06:12,971 INFO main [utils.RandomNum]info(line:39)kmeqR
+2017-06-15 17:06:37,086 INFO main [utils.RandomNum]info(line:39)E2Uu5cC3eyDypg9
+2017-06-15 17:07:38,951 INFO main [utils.RandomNum]info(line:39)xhmsC
+2017-06-15 17:07:51,961 INFO main [utils.RandomNum]info(line:39)GOJzIVJTYzCYQQsrXirwYrGvc
+2017-06-15 17:35:22,657 INFO main [utils.RandomNum]info(line:39)W3lr4zqrl20u3H8

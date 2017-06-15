@@ -18,15 +18,15 @@ public class LoggerControler {
             Properties properties = new Properties();
             try{
                 String dir = System.getProperty("user.dir");
-                String path = dir + "/log4j.properties";
-                InputStream is = new FileInputStream(path);
+                String file = dir + "/log4j.properties";
+                InputStream is = new FileInputStream(file);
                 properties.load(is);
             }catch (IOException e){
                 e.printStackTrace();
             }
             PropertyConfigurator.configure(properties);
             logger = Logger.getLogger(T);
-            loggerControler = new LoggerControler();
+            loggerControler  = new LoggerControler();
         }
         return loggerControler;
     }
