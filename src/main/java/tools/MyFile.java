@@ -7,34 +7,23 @@ import java.io.File;
  */
 
 public class MyFile {
-    /**
-     * 判断文件是否存在
-     *
-     * @param filePath 文件路劲
-     * @return ture  or  false
-     */
+
+    //判断文件是否存在
     public static boolean fileExists(String filePath) {
         File file = new File(filePath);
         Boolean b = file.exists();
         return b;
     }
 
-    /**
-     * 判断文件是否存在，没有就新建
-     *
-     * @param filePath 文件路径
-     */
+    //判断文件是否存在，没有就新建
     public static void creatFile(String filePath) {
-//        MyFile myFile = new MyFile();
         if (!MyFile.fileExists(filePath)) {
             File file = new File(filePath);
             file.mkdir();
         }
     }
 
-    /**
-     * 删除目录及目录下所有文件和文件夹
-     */
+    //删除目录及目录下所有文件和文件夹
     public static void deleteDirectory(String directoryPath) {
         File file = new File(directoryPath);
         if (file.isDirectory()) { //是文件夹
