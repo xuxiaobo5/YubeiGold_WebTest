@@ -8,9 +8,9 @@ import java.util.Date;
 /**
  * Created by Administrator on 2017/6/16 0016.
  */
-public class DateFormate {
+public class DateFormat {
 
-    final static LoggerControler log = LoggerControler.getLog(DateFormate.class);
+    final static LoggerControler log = LoggerControler.getLog(DateFormat.class);
 
     public static final String COMMON_DATE_FORMAT = "yyyy-MM-dd";
 
