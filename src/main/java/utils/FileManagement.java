@@ -1,4 +1,4 @@
-package tools;
+package utils;
 
 import java.io.File;
 
@@ -6,7 +6,7 @@ import java.io.File;
  * Created by Administrator on 2017/6/16 0016.
  */
 
-public class MyFile {
+public class FileManagement {
 
     //判断文件是否存在
     public static boolean fileExists(String filePath) {
@@ -17,7 +17,7 @@ public class MyFile {
 
     //判断文件是否存在，没有就新建
     public static void creatFile(String filePath) {
-        if (!MyFile.fileExists(filePath)) {
+        if (!FileManagement.fileExists(filePath)) {
             File file = new File(filePath);
             file.mkdir();
         }
