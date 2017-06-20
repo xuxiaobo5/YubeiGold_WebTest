@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class ScreenShot extends BasicPage{
 
-    static String path = System.getProperties().getProperty("user.dir") + "/error/";
+    final static String path = System.getProperties().getProperty("user.dir") + "/error/";
 
     public static void screenShot(){
         WebDriver augmentDriver = new Augmenter().augment(driver);
