@@ -14,9 +14,9 @@ public class TestCase_Login {
 
     @BeforeMethod
     public void openBrowser(){
-        BasicPage.openBrowser();
-        BasicPage.navigate("http://192.168.1.165:8010/trade-mis");
+        BasicPage.openBrowser("http://192.168.1.165:8010/trade-mis");
     }
+
     @Test
     public void testLogin(){
         Page_Login.Login();

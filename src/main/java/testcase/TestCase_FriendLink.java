@@ -16,13 +16,13 @@ import static pages.background.FrameUtils.rightFrame;
 /**
  * Created by Administrator on 2017/5/16 0016.
  */
-public class TestCase_FriendLink {
+public class TestCase_FriendLink extends BasicPage{
 
     @BeforeMethod
     public void open(){
-        BasicPage.openBrowser();
-        BasicPage.navigate("http://192.168.1.165:8010/trade-mis");
+        openBrowser("http://192.168.1.165:8010/trade-mis");
     }
+
     @Test
     public void aVoid() throws InterruptedException, IOException {
         Page_Login.Login();
