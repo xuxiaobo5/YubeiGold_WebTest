@@ -1,13 +1,9 @@
-package tools;
+package utils;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import utils.LoggerControler;
 
 import java.util.Random;
 
-/**
- * Created by Administrator on 2017/6/15 0015.
- */
 
 public class RandomNum {
 
@@ -15,7 +11,6 @@ public class RandomNum {
 
     //生成指定范围的随机数字
     public static int getRangeRandomNum(int min, int max){
-        String a = RandomStringUtils.randomAlphabetic(5);
         Random r = new Random();
         int num = r.nextInt(max - min + 1) + min;
         log.info(num);
@@ -39,4 +34,5 @@ public class RandomNum {
         String num = RandomStringUtils.randomAlphanumeric(length);
         log.info(num);
     }
+
 }
