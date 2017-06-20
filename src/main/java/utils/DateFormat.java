@@ -1,6 +1,4 @@
-package tools;
-
-import utils.LoggerControler;
+package utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
