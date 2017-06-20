@@ -22,7 +22,7 @@ public class ScreenShot extends BasicPage{
             //FileManagement fileManagement = new FileManagement();
             //fileManagement.creatFile(path + DateFormat.format(DateFormat.CHECK_LOG_FORMAT));
             FileUtils.copyFile(file, new File(path + DateFormat.format(DateFormat.CHECK_LOG_FORMAT) + "/" +
-                    DateFormat.format(DateFormat.DATE_FORMAT) + ".jpg"));
+                    DateFormat.format(DateFormat.COMMON_DATE_FORMAT) + ".jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
