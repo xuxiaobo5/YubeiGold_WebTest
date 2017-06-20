@@ -16,23 +16,19 @@ public class BasicPage {
 
     public static WebDriver driver;
 
-    //打开浏览器
-    public static WebDriver openBrowser(){
+    //打开浏览器并最大化,输入URL地址跳转
+    public static WebDriver openBrowser(String url){
         String dir = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", dir + "/drivers/chromedriver.exe");
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get(url);
         return driver;
     }
 
     //关闭浏览器
     public static void closeBrowser(){
         driver.quit();
-    }
-
-    //跳转链接并最大化浏览器
-    public static void navigate(String url){
-        driver.manage().window().maximize();
-        driver.get(url);
     }
 
     //查找单个元素
