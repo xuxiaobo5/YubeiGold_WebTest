@@ -2,9 +2,6 @@ package utils;
 
 import java.io.File;
 
-/**
- * Created by Administrator on 2017/6/16 0016.
- */
 
 public class FileManagement {
 
