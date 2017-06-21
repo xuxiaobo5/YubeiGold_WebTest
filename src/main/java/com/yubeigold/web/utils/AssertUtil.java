@@ -1,4 +1,4 @@
-package utils;
+package com.yubeigold.web.utils;
 
 import org.testng.Assert;
 import org.testng.collections.Lists;

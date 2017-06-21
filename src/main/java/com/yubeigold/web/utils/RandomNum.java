@@ -1,4 +1,4 @@
-package utils;
+package com.yubeigold.web.utils;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class RandomNum {
 
-    final static LoggerControler log = LoggerControler.getLog(RandomNum.class);
+    private static LoggerControler log = LoggerControler.getLog(BasicPage.class);
 
     //生成指定范围的随机数字
     public static int getRangeRandomNum(int min, int max){

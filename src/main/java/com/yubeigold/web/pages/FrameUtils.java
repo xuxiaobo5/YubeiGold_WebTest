@@ -1,4 +1,4 @@
-package pages.background;
+package com.yubeigold.web.pages;
 
 import org.openqa.selenium.By;
 

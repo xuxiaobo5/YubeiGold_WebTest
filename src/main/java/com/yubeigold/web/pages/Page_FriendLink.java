@@ -1,14 +1,8 @@
-package pages.background;
+package com.yubeigold.web.pages;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.Test;
-import utils.BasicPage;
 
-import static pages.background.FrameUtils.leftFrame;
 
-/**
- * Created by Administrator on 2017/5/16 0016.
- */
 public class Page_FriendLink {
 
     //定位一级标签 内容管理

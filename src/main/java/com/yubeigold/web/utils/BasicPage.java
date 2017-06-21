@@ -1,4 +1,4 @@
-package utils;
+package com.yubeigold.web.utils;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,20 +9,23 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author xuxiaobo
+ * 初始化浏览器以及常用方法的封装
+ */
 
 public class BasicPage {
 
-    final static LoggerControler log = LoggerControler.getLog(BasicPage.class);
+    private static LoggerControler log = LoggerControler.getLog(BasicPage.class);
+    private static WebDriver driver;
 
-    public static WebDriver driver;
-
-    //打开浏览器并最大化,输入URL地址跳转
+    //打开浏览器跳转URL并且最大化窗口
     public static WebDriver openBrowser(String url){
         String dir = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", dir + "/drivers/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.get(url);
+        driver.manage().window().maximize();
         return driver;
     }
 
@@ -31,43 +34,43 @@ public class BasicPage {
         driver.quit();
     }
 
-    //查找单个元素
-    public static WebElement findElement(By by){
+    //定位单个元素
+    public static WebElement locateElement(By by){
         WebElement element = null;
         try{
             WebDriverWait wait = new WebDriverWait(driver,10);
             wait.until(ExpectedConditions.presenceOfElementLocated(by));
         }catch (Exception e){
-            log.info("can't find element : " + by);
+            log.error("can't locate element : " + by);
             e.printStackTrace();
         }
         element = driver.findElement(by);
         return element;
     }
 
-    //查找多个元素
-    public static List<WebElement> findElements(By by){
+    //定位多个元素
+    public static List<WebElement> locateElements(By by){
         List<WebElement> list = null;
         try{
             WebDriverWait wait = new WebDriverWait(driver,10);
             wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
         }catch (Exception e){
-            log.info("can't find elements : " + by);
+            log.info("can't locate elements : " + by);
             e.printStackTrace();
         }
         list = driver.findElements(by);
         return list;
     }
 
-    //点击
+    //点击元素
     public static void click(By by){
-        WebElement e = findElement(by);
+        WebElement e = locateElement(by);
         e.click();
     }
 
     //输入文本
     public static void type(By by, String values){
-        WebElement e = findElement(by);
+        WebElement e = locateElement(by);
         e.clear();
         e.sendKeys(values);
         log.info("type values is : " + values);
@@ -75,7 +78,7 @@ public class BasicPage {
 
     //获取单个文本信息
     public static String getText(By by){
-        String text = findElement(by).getText();
+        String text = locateElement(by).getText();
         log.info("get text is : " + text);
         return text;
     }
@@ -83,7 +86,7 @@ public class BasicPage {
     //获取多个文本信息
     public static ArrayList getTexts(By by){
         ArrayList arrayList = new ArrayList();
-        List<WebElement> list = findElements(by);
+        List<WebElement> list = locateElements(by);
         for (int i = 0; i < list.size(); i++) {
             String text = list.get(i).getText();
             arrayList.add(text);
@@ -93,23 +96,22 @@ public class BasicPage {
 
     //滚动到指定元素并居中展示
     protected void scrollToElement(By by) {
-        WebElement e = findElement(by);
+        WebElement e = locateElement(by);
         log.info("scroll view element");
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        // roll down and keep the element to the center of browser
         js.executeScript("arguments[0].scrollIntoViewIfNeeded(true);", e);
     }
 
     //移动到指定元素
     public static void moveToElement(By by){
-        WebElement e = findElement(by);
+        WebElement e = locateElement(by);
         Actions actions = new Actions(driver);
         actions.moveToElement(e).perform();
     }
 
     //切换到frame
     public static void switchToFrame(By by){
-        WebElement f = findElement(by);
+        WebElement f = locateElement(by);
         driver.switchTo().frame(f);
     }
 

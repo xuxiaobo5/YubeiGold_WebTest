@@ -1,4 +1,4 @@
-package utils;
+package com.yubeigold.web.utils;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -10,6 +10,7 @@ import java.util.Properties;
 
 
 public class LoggerControler {
+
     public static Logger logger = null;
     public static LoggerControler loggerControler = null;
 

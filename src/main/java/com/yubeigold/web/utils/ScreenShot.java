@@ -1,4 +1,4 @@
-package utils;
+package com.yubeigold.web.utils;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
