@@ -2,6 +2,10 @@ package com.yubeigold.web.utils;
 
 import java.io.File;
 
+/**
+ * File management.
+ * @author xuxiaobo
+ */
 
 public class FileManagement {
 

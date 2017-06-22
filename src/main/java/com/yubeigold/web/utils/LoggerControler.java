@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * Log4J.
+ * @author xuxiaobo
+ */
 
 public class LoggerControler {
 

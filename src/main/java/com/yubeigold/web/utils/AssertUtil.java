@@ -7,6 +7,10 @@ import org.testng.internal.EclipseInterface;
 import java.lang.reflect.Array;
 import java.util.*;
 
+/**
+ * Assert failed will take screen shot.
+ * @author xuxiaobo
+ */
 
 public class AssertUtil {
 
@@ -39,6 +43,7 @@ public class AssertUtil {
     }
 
     public static void fail(String message) {
+        //自动截图
         ScreenShot.screenShot();
         throw new AssertionError(message);
     }

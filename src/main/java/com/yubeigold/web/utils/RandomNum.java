@@ -4,10 +4,14 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.Random;
 
+/**
+ * Generate specify random num and Alpha.
+ * @author xuxiaobo
+ */
 
 public class RandomNum {
 
-    private static LoggerControler log = LoggerControler.getLog(BasicPage.class);
+    private static LoggerControler log = LoggerControler.getLog(RandomNum.class);
 
     //生成指定范围的随机数字
     public static int getRangeRandomNum(int min, int max){
@@ -29,7 +33,7 @@ public class RandomNum {
         log.info(num);
     }
 
-    //生成指定长度的字随机母和数字组合字
+    //生成指定长度的随机大小写母和数字组合组合
     public static void getRandomAlpNum(int length){
         String num = RandomStringUtils.randomAlphanumeric(length);
         log.info(num);

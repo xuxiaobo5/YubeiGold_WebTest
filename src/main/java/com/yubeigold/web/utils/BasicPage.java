@@ -10,14 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Init webdriver.
  * @author xuxiaobo
- * 初始化浏览器以及常用方法的封装
  */
 
 public class BasicPage {
 
     private static LoggerControler log = LoggerControler.getLog(BasicPage.class);
-    private static WebDriver driver;
+    public static WebDriver driver;
 
     //打开浏览器跳转URL并且最大化窗口
     public static WebDriver openBrowser(String url){
