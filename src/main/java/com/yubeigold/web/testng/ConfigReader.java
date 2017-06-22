@@ -1,4 +1,7 @@
-package com.yubeigold.web.utils;
+package com.yubeigold.web.testng;
+
+import com.yubeigold.web.utils.BasicPage;
+import com.yubeigold.web.utils.LoggerControler;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,12 +11,11 @@ import java.util.Properties;
 
 /**
  * Read config properties file.
- * 
- * @author kevinkong
- * 
+ * @author xuxiaobo
  */
+
 public class ConfigReader {
-	private static LoggerControler log = LoggerControler.getLog(BasicPage.class);
+	private static LoggerControler log = LoggerControler.getLog(ConfigReader.class);
 	private static ConfigReader cr;
 	private int retryCount = 0;
 	private String sourceCodeDir = "src";
@@ -76,12 +78,6 @@ public class ConfigReader {
 		return this.sourceCodeEncoding;
 	}
 
-	/**
-	 * 
-	 * @param propertyFileName
-	 * 
-	 * @return
-	 */
 	private Properties getConfig(String propertyFileName) {
 		Properties properties = new Properties();
 		try {

@@ -1,23 +1,25 @@
-package com.yubeigold.web.utils;
+package com.yubeigold.web.testng;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+
+import com.yubeigold.web.utils.LoggerControler;
+import com.yubeigold.web.utils.ScreenShot;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
 /**
- * Test result Listener.
- * 
- * @author kevinkong
- * 
+ * Test result Listener
+ * @author xuxiaobo
  */
+
 public class TestResultListener extends TestListenerAdapter {
 
-	private static LoggerControler log = LoggerControler.getLog(BasicPage.class);
+	private static LoggerControler log = LoggerControler.getLog(TestResultListener.class);
 
 	@Override
 	public void onTestFailure(ITestResult tr) {
@@ -89,9 +91,6 @@ public class TestResultListener extends TestListenerAdapter {
 				failedTestIds.add(failedTestId);
 			}
 		}
-		
-
-		
 
 		// finally delete all tests that are marked
 		for (Iterator<ITestResult> iterator = testContext.getFailedTests().getAllResults().iterator(); iterator.hasNext();) {
@@ -101,7 +100,6 @@ public class TestResultListener extends TestListenerAdapter {
 				iterator.remove();
 			}
 		}
-
 	}
 
 	private int getId(ITestResult result) {

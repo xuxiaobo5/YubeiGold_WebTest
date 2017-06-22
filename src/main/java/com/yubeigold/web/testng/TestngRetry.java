@@ -1,19 +1,17 @@
-package com.yubeigold.web.utils;
+package com.yubeigold.web.testng;
 
-import org.apache.log4j.Logger;
+import com.yubeigold.web.utils.LoggerControler;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-
-
 /**
  * TestNG retry Analyzer.
- * @author kevinkong
- *
+ * @author xuxiaobo
  */
+
 public class TestngRetry implements IRetryAnalyzer {
-	private static LoggerControler log = LoggerControler.getLog(BasicPage.class);
+	private static LoggerControler log = LoggerControler.getLog(TestngRetry.class);
 	private int retryCount = 1;
 	private static int maxRetryCount;
 
